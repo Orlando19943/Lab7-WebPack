@@ -36,5 +36,11 @@
 }
 
 .text{
+  text-align: justify;
   font-style: oblique;
 }
+
+.border {
+  border: double;
+}
+
