@@ -32,15 +32,38 @@
 }
 .title{
   font-size: 20px;
-  
+  color: black;
 }
 
 .text{
   text-align: justify;
   font-style: oblique;
+  color: black;
 }
 
-.border {
-  border: double;
+.box {
+  border: groove;
+  box-shadow: 2px 2px #8f8f8f;
 }
 
+.textB {
+  color: white; 
+  
+}
+
+.padding{
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+#texto p {
+  padding-top: 10px;
+}
+#acerca_de {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
