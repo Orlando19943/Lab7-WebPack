@@ -1,0 +1,70 @@
+.fondo {
+  background: black;
+}
+
+#carouler1 img{
+    width: auto;
+    height: 900px;
+    max-height: 2000px;
+}
+
+#carouler1 p {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#carouler1 h5 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.focus :hover{
+  transform: scale(1.05);
+}
+
+#card :hover{
+  transform: scale(1.05);
+}
+#card {
+  background-color: black;
+}
+#card h3 {
+  color: azure;
+}
+.title{
+  font-size: 20px;
+  color: black;
+}
+
+.text{
+  text-align: justify;
+  font-style: oblique;
+  color: black;
+}
+
+.box {
+  border: groove;
+  box-shadow: 2px 2px #8f8f8f;
+}
+
+.textB {
+  color: white; 
+  
+}
+
+.padding{
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+#texto p {
+  padding-top: 10px;
+}
+#acerca_de {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
