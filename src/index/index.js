@@ -8,6 +8,7 @@ import imagen6 from "../Imagenes/imagen6.jpg"
 import imagen7 from "../Imagenes/imagen7.jpg"
 import imagen8 from "../Imagenes/imagen8.jpg"
 import imagen9 from "../Imagenes/imagen9.jpg" 
+import "bootstrap/dist/js/bootstrap.js"
 import "./index.scss"
 
 
@@ -39,7 +40,7 @@ document.getElementById("image5").src = imagen5
 document.getElementById("image6").src = imagen6
 document.getElementById("image7").src = imagen7
 document.getElementById("image8").src = imagen8
-document.getElementById("image9").src = imagen9
+document.getElementById("image9").src = imagen9 
 
 document.getElementById("img1").src = imagen1
 document.getElementById("img2").src = imagen2
@@ -50,4 +51,4 @@ document.getElementById("img6").src = imagen6
 document.getElementById("img7").src = imagen7
 document.getElementById("img8").src = imagen8
 document.getElementById("img9").src = imagen9
-
+ 
