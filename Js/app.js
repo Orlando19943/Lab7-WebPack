@@ -1,4 +1,4 @@
-export const text = [
+let text = [
     "Esta historia tiene como personaje principal a Tim, un chico alto, delgado y pelirrojo. Tim vive con sus padres, su tio y su hermana menor llamada Kit Kat. Tim no era muy bueno con las chicas. Su familia realizó una fiesta para año nuevo, invitando a muchos amigos y  familiares. Llegado la media noche, todas las personas se besaron con alguien, a excepción de Tim. Había una chica que quería ser besada por Tim, pero Tim solamente le dio la mano.",
     "El padre de Tim lo llama, quería tener una charla con el. Su padre le revela que los varones de su familia obtienen el don de poder viajar en el tiempo cuando cumplen  21 años. Tim al principio pensó que era una broma, pero su padre lo convenció de intentarlo. El proceso era muy simple, solamente debía de ir a un lugar oscuro y solitario, apretar los puños y pensar a que momento, de su vida, quería regresar.\n Tim se metió en un armario, apretó los puños y viajó en el tiempo, más concretamente a la nocheanterior. Entonces Tim sin dudarlo hizo las cosas correctamente, besó a la chica y regresó al presente como todo un ganador.\nAl ver que era cierto, regresó con su padre para seguir charlando. Este le dijo que no vale la pena usar este poder para conseguir dinero o poder, que al final se quedaría solo,como le pasó a un familiar suyo. Entonces Tim pensó en utilizar este poder para poder conseguiruna novia.",
     "El verano de ese año, llegó la prima de Jimmy (novio de Kit Kat) llamada Charlotte. Tim se enamoró de ella a primera vista. Así que siguiendo el consejo que le dio su padre, utilizarálos viajes en el tiempo para convertirse en su novio. Gracias a esto logró demostrar en multiples ocasiones que es una persona lista, interesante y atlética. Al final del verano, Tim le declaró su amor a Charlotte, pero ella lo rechazó diciendo que no fue buena idea haberle pedido eso justo en la última noche en la que ella iba a estar con ellos. Entonces a Timse le ocurrió viajar en el tiempo a la mitad del verano para declararle su amor, pero esta vez Charlotte le dijo que mejor esperen hasta fin del verano para ver como irian las cosas. Tim se decepcionó de esto, pero aprendió una valiosa lección. Algunas cosas no se pueden cambiar por más veces que uno viaje en el tiempo.",
@@ -9,3 +9,33 @@ export const text = [
     "Pasa el tiempo, Tim tiene otro hijo. Era un día cualquiera, Tim recibe una llamada de su madre. El padre de Tim tiene cancer. Tim viaja hasta la casa de sus padres y tiene una conversación con su padre.Su padre le dice que le dio cancer por haber fumado en su juventud. El no puede arreglarlo porque fue antes de que Tim naciera. Luego su padre le revela el mayor secreto de los viajes en el tiempo. El secreto consiste en como disfrutar la vida. El primer paso consiste en vivir un día normal, con las preocupaciones, tensiones que hay en un día y el segundo paso consiste en volver al inicio de ese día, pero esta vez disfrutando cada momento del día. Disfrutando hasta el más mínimo detalle. Tim lo puso a prueba y al vivir otra vez ese mismo día se percató de muchas cosas que una persona se pierde por estar concentrado en otras cosas. Luego llegó el día. En palabras de Tim Hay algunos días que a nadie le gustaría volver a repetir, pero Tim aún quería seguir pasando tiempo con su padre. Gracias a los viajes en el tiempo, Tim aún puede seguir viendo a su padre a pesar de que esta ya haya muerto. Así lo estuvo haciendo durante muchos días. Hasta que un díaMary le mencionó la idea a Tim sobre tener otro hijo. Tim al principio se vió dudoso, ya que al tener otro hijo, ya no podrá ver a su padre. Tim al final aceptó, ya que debía de dejar el pasado y de seguir con el futuro. Antes de que naciera su tercer hijo, Tim decide visitar a su padre por última vez. Juegan un partido de tennis de mesa. Su padre gana y le pregunta cual es su premio. Tim le dice que es un beso. Su padre al inicio se ve un poco confundido, pero termina entendiendo que es la despedida. Así que le pide a Tim un último obsequio. Le pide dar una paseo por la playa, pero viajando unos años más atras, donde Tim es un niño y su padre es más joven. Tim le pregunta si estará bien hacer eso y su padre le responde que si son cuidadosos, no cambiaran nada.Y así es, viajan al pasado y tienen un último paseo por la playa.",
     "Ya han pasado varios años, Tim menciona que ha logrado aprender mucho más que su padre sobre los viajes en el tiempo. La lección que aprendió Tim es vivir cada día de tu vida como si fuera el último, no es necesario vivir un día dos veces para poder disfrutarlo. Y así es, Tim vive cada día de su vida como si fuera la segunda vezque lo vive. Disfrutando hasta el más mínimo detalle."
 ]
+let title = [
+    "Inicio",
+    "Un don",
+    "Algunas cosas no se pueden cambiar",
+    "Un día cualquiera",
+    "Una nueva oportunida",
+    "La felicidad",
+    "Para un problema existen varias soluciones",
+    "Algunos días es mejor solo vivirlos una vez",
+    "Vivir cada día como si fuera el último"
+]
+window.onload = function (){
+    var pagina = localStorage.getItem("numero");  
+    if (pagina !== null){
+        document.getElementById("titulo").innerHTML = title[pagina - 1];
+        document.getElementById("historia").innerHTML = text[pagina - 1];
+        window.localStorage.clear();
+    }else {
+        document.getElementById("titulo").innerHTML = title[0];
+        document.getElementById("historia").innerHTML = text[0];
+        window.localStorage.clear();
+    }
+    //console.log(pagina);
+}
+
+function page (pagina){ 
+    document.getElementById("titulo").innerHTML = title[pagina - 1];
+    document.getElementById("historia").innerHTML = text[pagina - 1];
+    //console.log(pagina);
+}

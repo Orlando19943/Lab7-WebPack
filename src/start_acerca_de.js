@@ -1,1 +1,0 @@
-import "./acerca_de/acerca_de"
